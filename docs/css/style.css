@@ -1,6 +1,11 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
 }
 
 body {
@@ -26,15 +31,17 @@ header {
 }
 
 .header-top {
-    background-color: rgba(28, 209, 176, 1);
+    background-color: rgba(209, 137, 28, 1);
+
     
 }
 
 .header-top p {
-    padding: 10px;
+    padding-block: 1rem;
+    padding-left: 4rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 3rem;
     color: rgba(0, 0, 0, 1);
 }
 
@@ -44,43 +51,42 @@ header {
 }
 
 .header-bot h1 {
-    padding: 28px;
+    padding-left: 4rem;
+    padding-block: 1.5rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: 36px;
-    color: rgba(0, 0, 0, 1);
+    font-size: 4.5rem;
+    color: rgba(255, 255, 255, 1);
 }
 
 main {
-    padding: 150px 32px;
+    padding-block: 6rem; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .cards {
-    padding-left: 12%;
-    /* border: 1px solid black; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 3.5rem;
 }
 
 .card {
-    /* border: 1px solid blueviolet; */
-    width: 300px;
-    display: inline-block;
-}
-
-.card:nth-child(2) {
-    margin-inline: 32px;
+    width: 30rem;
 }
 
 .fa-heart {
     color:  rgba(204, 36, 36, 1);
-    width: 30px;
     position: relative;
     top: 16px;
     left: 21px;
 }
 
 .card-bg-container {
-    height: 193px;
-    border-radius: 16px 16px 0px 0px;
+    height: 19.3rem;
+    border-radius: 1.6rem 1.6rem 0px 0px;
 }
 
 .bg-img-1 {
@@ -93,6 +99,10 @@ main {
 
 .bg-img-3 {
     background-image: url('../img/earth-bg.jpg');
+}
+
+.bg-img-4 {
+    background-image: url('../img/bg-superman.png');
 }
 
 .card-hero-img {
@@ -110,16 +120,19 @@ main {
 }
 
 .card-content {
-    padding-inline: 16px;
-    padding-top: 96px;
+    padding-inline: 1.6rem;
+    padding-top: 9.6rem;
     background-color: rgba(243, 243, 243, 1);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .card-h2 {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    font-size: 28px;
+    font-size: 2.8rem;
     text-transform: capitalize;
     text-align: center;
     color: rgba(0, 0, 0, 1);
@@ -128,23 +141,50 @@ main {
 .card-p {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1.6rem;
     text-align: justify;
-    padding-top: 12px;
+    padding-top: 1.2rem;
     color: rgba(51, 51, 51, 1);
+    height: 12.6rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical; 
 }
 
 .card-btn {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1.6rem;
     color: #fff;
-    padding: 16px 32px;
+    padding: 1.6rem 3.2rem;
     background-color: rgba(0, 102, 159, 1);
-    margin-top: 36px;
-    margin-bottom: 16px;
-    position:relative;
-    left: 77px;
+    margin-top: 3.6rem;
+    margin-bottom: 1.6rem;
+    transition: all 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.card-btn:hover {
+    background-color: #fff;
+    color: rgba(0, 102, 159, 1);
+    outline: 1px solid rgba(0, 102, 159, 1);
+    
+}
+
+.add-btn {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    background-color: rgba(0, 102, 159, 1);
+    color: rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 700;
 }
 
 footer {
@@ -154,9 +194,9 @@ footer {
 footer p {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 1.6rem;
     color: #fff;
     text-align: center;
-    padding: 16px;
+    padding: 1.6rem;
     background-color: rgba(0, 102, 159, 1);
 }
