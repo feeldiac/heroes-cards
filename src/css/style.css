@@ -90,19 +90,19 @@ main {
 }
 
 .bg-img-1 {
-    background-image: url('../img/bg-repeated.png');
+    background-image: url('../assets/img/bg-repeated.png');
 }
 
 .bg-img-2 {
-    background-image: url('../img/bg-pink.png');
+    background-image: url('../assets/img/bg-pink.png');
 }
 
 .bg-img-3 {
-    background-image: url('../img/earth-bg.jpg');
+    background-image: url('../assets/img/earth-bg.jpg');
 }
 
 .bg-img-4 {
-    background-image: url('../img/bg-superman.png');
+    background-image: url('../assets/img/bg-superman.png');
 }
 
 .card-hero-img {
